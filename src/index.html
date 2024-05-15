@@ -3,13 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./css/output.css" rel="stylesheet">
 </head>
 <body>
-  <div>
-    <header>
-        
-    </header>
+  <div class="scrollDist"></div>
+  <div class="main relative w-full">
+    <div class="abolute w-full h-full">
+      <img class="w-full sky" src="./images/sky.jpg" width="1200" height="590"/>
+      <img class="cloud2 -top-[2rem] z-20 absolute w-full" src="./images/cloud2.webp"/>
+      <img class="mountBg -bottom-44 center w-full z-10 absolute " src="./images/mountBg.webp"/>
+      <img class="mountMg absolute w-[85%] z-10 left-0 bottom-0" src="./images/mountMg.webp"/>
+      <img class="mountFg right-0 w-full bottom-0 absolute z-10" src="./images/mountFg.webp"/>
+      <img class="cloud1 bottom-0 z-10 absolute" src="./images/cloud1.png"/>
+      <img class="cloud3 absolute bottom-0 z-10" src="./images/cloud3.png"/>
+    </div>
+    <div class="flex text-white fixed justify-center flex-col items-center -top-56  z-20 w-full h-full">
+      <p class="font-extrabold  text-[10rem] uppercase">Explore</p>
+      <button id="arrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+        </svg>
+      </button>
+    </div>
+    <div class="flex text-white justify-center flex-col items-center -top-56  z-20 w-full h-full">
+      <p class="font-extrabold  text-[10rem] uppercase">Explore</p>
+      <button id="arrowBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+        </svg>
+      </button>
+    </div>
   </div>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
